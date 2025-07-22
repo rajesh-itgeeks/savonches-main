@@ -1,0 +1,24 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "89116fd95ec6d65ecedb090b3190ce25"
+name = "savonches-dev-001"
+handle = "savonches-dev-001"
+application_url = "https://sri-taste-thanksgiving-shopper.trycloudflare.com"
+embedded = true
+
+[build]
+include_config_on_deploy = true
+automatically_update_urls_on_dev = true
+
+[webhooks]
+api_version = "2025-07"
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = ["https://sri-taste-thanksgiving-shopper.trycloudflare.com/auth/callback", "https://sri-taste-thanksgiving-shopper.trycloudflare.com/auth/shopify/callback", "https://sri-taste-thanksgiving-shopper.trycloudflare.com/api/auth/callback"]
+
+[pos]
+embedded = false

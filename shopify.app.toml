@@ -1,0 +1,28 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "db2cda6022c43f88cc11346e46161582"
+name = "savonches-dev"
+handle = "savonches-dev-1"
+application_url = "https://dip-has-postal-navy.trycloudflare.com"
+embedded = true
+
+[build]
+include_config_on_deploy = true
+automatically_update_urls_on_dev = true
+
+[webhooks]
+api_version = "2025-07"
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "read_customers,write_products,read_online_store_pages,write_content"
+
+[auth]
+redirect_urls = [
+  "https://dip-has-postal-navy.trycloudflare.com/auth/callback",
+  "https://dip-has-postal-navy.trycloudflare.com/auth/shopify/callback",
+  "https://dip-has-postal-navy.trycloudflare.com/api/auth/callback"
+]
+
+[pos]
+embedded = false
