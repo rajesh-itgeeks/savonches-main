@@ -222,23 +222,6 @@ console.log("--------------------------------------chlllll")
     return result;
   }
 
-  // dellete producttypesetting list
-  async UpdateProductTypeSettings(id,data) {
-
-
-    const response = await fetch(`/api/types/update/${id}`, {
-      method: 'PUT',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify(data)
-    });
-    const result = await response.json();
-
-    return result;
-  }
-
-
   // add producttypesetting list
 
   async DeleteProductTypeSettings(id) {
@@ -317,10 +300,26 @@ console.log("--------------------------------------chlllll")
     return result;
   }
   // makeOffer 
-    async UpdateProductTypeSettings(id,data) {
+  //   async UpdateProductTypeSettings(id,data) {
 
 
-    const response = await fetch(`/api/admin-quote/update/${id}`, {
+  //   const response = await fetch(`/api/admin-quote/update/${id}`, {
+  //     method: 'PUT',
+  //     headers: {
+  //       'Content-Type': 'application/json',
+  //     },
+  //     body: JSON.stringify(data)
+  //   });
+  //   const result = await response.json();
+
+  //   return result;
+  // }
+
+  // dellete producttypesetting list
+  async UpdateProductTypeSettings(id,data) {
+
+
+    const response = await fetch(`/api/types/update/${id}`, {
       method: 'PUT',
       headers: {
         'Content-Type': 'application/json',
